@@ -12,12 +12,19 @@ from os.path import isfile, join
 import urllib.parse
 
 def check_files(files):    
-    required_files = ["1.png","2.png","3.png","4.png","5.png","6.png",
-                      "date.txt","difficulty.txt","gb.txt","mapper.txt","name.txt"]
+    required_files = ["date.txt","difficulty.txt","gb.txt","mapper.txt","name.txt"]
     missing = []
     for required_file in required_files:
         if not required_file in files:
             missing.append(required_file)
+    if len(missing) < 1: # nothing else missing check jpg/jpeg/png
+        for i in range(1, 7):
+            all_missing = True
+            for ext in [".png", ".jpeg", ".jpg"]:
+                if f"{i}{ext}" in files:
+                    all_missing = False
+            if all_missing:
+                missing.append(f"Image {i}")
     return missing
 
 def create_map_dictionary(path):
@@ -49,7 +56,12 @@ def create_map_dictionary(path):
             print("Skipping...")
             count_missing += 1
         else:
-            map_obj["image_paths"].extend([join(path, urllib.parse.quote(folder), fn) for fn in ["1.png","2.png","3.png","4.png","5.png","6.png"]])
+            for i in range(1, 7):
+                img = ""
+                for ext in [".png", ".jpg", ".jpeg"]:
+                    if (fn:=f"{i}{ext}") in files:
+                        img = join(path, urllib.parse.quote(folder), fn)
+                map_obj["image_paths"].append(img)
             # Fill out info object
             info_obj = map_obj["info"]
             #This is kinda ugly but eh
