@@ -5,7 +5,7 @@
     <meta content="GuessTheMap - Your daily celeste map guessing puzzle!" property="og:title" />
     <meta content="Try to name the Celeste map shown in the screenshots in 6 guesses or less!" property="og:description" />
     <meta content="https://guessthemap.com/" property="og:url" />
-    <meta content="./favicon.ico" property="og:image" />
+    <meta content="https://guessthemap.com/favicon.ico" property="og:image" />
     <meta content="#000000" data-react-helmet="true" name="theme-color" />
     <!-- rest -->
     <meta charset="utf-8">
@@ -19,7 +19,8 @@
     <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand">Guess the Map #<span id="currentDay">?</span></a>
+          <a class="navbar-brand">
+            <img style="height:3rem; width:3rem;" src="favicon.ico"></img>Guess the Map #<span id="currentDay">?</span></a>
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#streakModal" onclick="fillStats()">
@@ -44,8 +45,7 @@
         <div class="container text-center">
           <br>
           <img id="gameImage" src="" alt="Game image">
-          <p id="gameInfo" style="color: gray;"></p>
-          <br><br>
+          <p id="gameInfo" style="color: gray; font-size: larger;"></p>
           <button id="button0" type="button" class="btn btn-secondary" onclick="select_image(0)">1</button>
           <button id="button1" type="button" class="btn btn-dark" onclick="select_image(1)" disabled>2</button>
           <button id="button2" type="button" class="btn btn-dark" onclick="select_image(2)" disabled>3</button>

@@ -328,7 +328,7 @@ function share() {
     const emoji = {incorrect:"🟥", none:"⬛", correct:"🟩"};
     let emoji_representation = "";
     if(current_guess >= 6) {
-        emoji_representation = Array(6).fill(emoji.incorrect).join("");
+        emoji_representation = Array(6).fill(emoji.incorrect).join(" ");
         amount = "X";
     } else {
         emoji_representation = Array(6).fill("").map((_, i) => {
