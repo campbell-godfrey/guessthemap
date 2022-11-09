@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Renogare;
+    src:
+    url("https://everestapi.github.io/fonts/Renogare-Regular.woff") format("woff"),
+    url("https://everestapi.github.io/fonts/Renogare-Regular.otf") format("opentype");
+}
+  
+
+body {
+    font-family: Renogare, sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+img {
+    max-width: 512px;
+    height: 280px;
+}
