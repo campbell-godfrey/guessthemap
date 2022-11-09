@@ -222,13 +222,13 @@ function end_game(win, restore=false) {
         
             if(game_data.last_day_completed == current_day-1) {
                 game_data.streak += 1;
-                if(game_data.streak >= game_data.max_streak) {
-                    game_data.max_streak = game_data.streak;
-                }
             } else if(game_data.last_day_completed < current_day-1) {
                 game_data.streak = 1;
             }
-    
+            
+            if(game_data.streak >= game_data.max_streak) {
+                game_data.max_streak = game_data.streak;
+            }
         } else { 
             game_data.win_distribution[6] += 1;
             game_data.streak = 0;
