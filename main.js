@@ -190,8 +190,13 @@ function skip() {
     incorrect_guess("Skipped!");
 }
 
+/**
+ * Tries to check lower case versions of both strings against each other.
+ * @param {String} guess 
+ * @returns {Boolean} if it matches current day true
+ */
 function check_guess(guess) {
-    return current_object.info.map_name == guess;
+    return current_object.info.map_name.toLowerCase() == guess.toLowerCase();
 }
 
 function end_game(win, restore=false) {
