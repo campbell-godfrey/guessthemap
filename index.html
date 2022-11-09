@@ -1,8 +1,155 @@
-<html>
-<head>
-  </head>
-<body>
-  <h1> soon :) - Aurora & Touhoe</h1>
-  </body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guess the Map</title>
+    <link rel="stylesheet" href="./autoComplete.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" href="./favicon.ico">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">Guess the Map</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#streakModal" onclick="fillStats()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="butt" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>                
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#infoModal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#creditsModal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>                
+                </a>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div class="container text-center">
+          <br>
+          <img id="gameImage" src="" alt="Game image">
+          <p id="gameInfo" style="color: gray;"></p>
+          <br><br>
+          <button id="button0" type="button" class="btn btn-secondary" onclick="select_image(0)">1</button>
+          <button id="button1" type="button" class="btn btn-dark" onclick="select_image(1)" disabled>2</button>
+          <button id="button2" type="button" class="btn btn-dark" onclick="select_image(2)" disabled>3</button>
+          <button id="button3" type="button" class="btn btn-dark" onclick="select_image(3)" disabled>4</button>
+          <button id="button4" type="button" class="btn btn-dark" onclick="select_image(4)" disabled>5</button>
+          <button id="button5" type="button" class="btn btn-dark" onclick="select_image(5)" disabled>6</button>
+          <br><br>
+          <div id="input">
+          <input type="text" id="autoComplete">
+          <button id="buttonOK" type="button" class="btn btn-success">OK</button>
+          <button id="buttonSKIP" type="button" class="btn btn-danger">SKIP</button>
+          </div>
+          <div id="youWin" hidden>
+          <h1 class="text-success">Congratulations! You guessed the map!</h1>
+          </div>
+          <div id="youLose" hidden>
+          <h1 class="text-danger">You did not manage to guess the map.</h1>
+          </div>
+          <div id="aftergameInfo" hidden>
+          <h2 class="text-light">The correct map was: <a href="/" class="text-success" id="answer"></a></h2>
+          <button id="buttonSHARE" type="button" class="btn btn-success btn-lg">Share your result</button>
+          </div>
+          <br>
+          <div id="guesses" class="text-light" hidden><h2>Guesses:</h2></div>
+          <br>
+          <p class="text-light">New Map in: <span id="timer">??:??:??</span></p>
+        </div>
+      </div>
+      <div class="modal fade" id="streakModal" tabindex="-1" aria-labelledby="streakModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Current Streak</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <h3 class="text-secondary">Wins</h3>
+                    <h1 id="statWins">2</h1>
+                  </div>
+                  <div class="col">
+                    <h3 class="text-secondary">Plays</h3>
+                    <h1 id="statPlays">2</h1>
+                  </div>
+                  <div class="col">
+                    <h3 class="text-secondary">Win%</h3>
+                    <h1><span id="statPercentage">100</span></h1>
+                  </div>
+                </div>
+              </div>
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <h3 class="text-secondary">Current Streak</h3>
+                    <h1 id="statStreak">2</h1>
+                  </div>
+                  <div class="col">
+                    <h3 class="text-secondary">Longest Streak</h3>
+                    <h1 id="statMaxStreak">2</h1>
+                  </div>
+                </div>
+              </div>
+              <h3 class="text-secondary">Guess distribution</h3>
+              <div class="container text-center" id="guessDistribution">
+                <!-- Guess distribution is inserted here via code -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Info Modal -->
+      <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">How to play</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Guess the modded Celeste Map based on the images shown.</p>
+              <p>Wrong guesses or skipping shows one more image, until all 6 are shown.</p>
+              <p>The 4th, 5th and 6th image also offer an extra piece of information.</p>
+              <p>You can see your previous guesses below.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Credits Modal -->
+      <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Credits</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>This project was created mainly by Aurora,
+                  who wrote all the code for this website, 
+                  as well as touhoe, who “came up with” (stole) the idea 
+                  and organized a vast majority of the maps + screenshots.</p>
+              <p>Huge thanks to ABuffZucchini and staco for a large portion of the screenshots!</p>
+              <p class="text-secondary">Uses bootstrap, <a href="https://iconsvg.xyz/">iconSVG</a> and autocomplete.js.
+                Inspired by <a href="https://guessthe.game">guessthe.game</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+    </body>
 </html>
