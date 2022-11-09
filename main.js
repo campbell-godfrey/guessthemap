@@ -57,8 +57,21 @@ function main_function(_map_index) {
     // setup
     map_index = _map_index;
     // setup autocomplete
-    autoCompleteConfig["data"]["src"] = _map_index["keys"]
-    autoCompleteJS = new autoComplete(autoCompleteConfig);
+    try{
+        autoCompleteConfig["data"]["src"] = _map_index["keys"]
+        autoCompleteJS = new autoComplete(autoCompleteConfig);
+    }
+    catch (e) {
+        // Add warning for jsdeliver.net
+        let h1Element = document.createElement("h1");
+        h1Element.style = "color:goldenrod;"
+        node = document.createTextNode(`Make sure Add-ons aren't blocking scripts from jsdelivr.net, they are required for this website to work! (autocomplete.js failed to load)`);
+        h1Element.appendChild(node);
+        let gameImage = document.getElementById("gameImage")
+        let parent = gameImage.parentNode;
+        parent.insertBefore(h1Element, gameImage);
+        throw e;
+    }
     // setup onclicks
     document.getElementById("buttonOK").onclick = confirm;
     document.getElementById("buttonSKIP").onclick = skip;
