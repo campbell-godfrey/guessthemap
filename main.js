@@ -77,9 +77,11 @@ function main_function(_map_index) {
     document.getElementById("buttonSKIP").onclick = skip;
     document.getElementById("buttonSHARE").onclick = share;
     // get current day (days since epoch utc), this might be wrong.. I hope not
+    let current_day_el = document.getElementById("currentDay");
     let date = new Date();
     let minute_offset = date.getTimezoneOffset();
     current_day = Math.floor(((date.getTime() - (minute_offset*6e4))-epoch)/8.64e7);
+    current_day_el.innerText = current_day;
     current_object = map_index["maps"][order[(current_day % order.length)]];
     current_image = 0;
     current_guess = 0;
