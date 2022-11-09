@@ -339,10 +339,10 @@ function share() {
             } else {
                 return emoji.none;
             }
-        }).join("");
+        }).join(" ");
         amount = current_guess;
     }
-    let  text = `Guess the Map #${current_day}\n${emoji_representation} ${amount}/6\n\nhttps://guessthemap.com`;
+    let  text = `Guess the Map #${current_day}\n\n${emoji_representation} ${amount}/6\n\nhttps://guessthemap.com`;
 
     navigator.clipboard.writeText(text).then(() => {
         // copied!
