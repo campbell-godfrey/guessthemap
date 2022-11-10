@@ -30,19 +30,19 @@
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#streakModal" onclick="fillStats()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="butt" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
-                  <span class="collapse" id="navbarSupportedContent"> Streak and Stats</span>
+                  <span class="collapse" id="navbarSupportedContent">Streak and Stats</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#infoModal">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-                  <span class="collapse" id="navbarSupportedContent"> How to play</span>
+                  <span class="collapse" id="navbarSupportedContent">How to play</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="modal" data-bs-target="#creditsModal">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>                
-                  <span class="collapse" id="navbarSupportedContent"> Info</span>
+                  <span class="collapse" id="navbarSupportedContent">Credits</span>
                 </a>
               </li>
             </ul>
@@ -52,7 +52,10 @@
       <div class="container-fluid">
         <div class="container text-center">
           <br>
-          <img id="gameImage" src="" alt="Game image">
+          <!-- div with width 100% and scroll is for mobile and very zoomed in users. -->
+          <div style="width:100%; overflow:auto;">
+            <img id="gameImage" src="" alt="Game image">
+          </div>
           <p id="gameInfo" style="color: gray; font-size: larger;"></p>
           <button id="button0" type="button" class="btn btn-secondary" onclick="select_image(0)">1</button>
           <button id="button1" type="button" class="btn btn-dark" onclick="select_image(1)" disabled>2</button>
@@ -73,7 +76,7 @@
           <h1 class="text-danger">You did not manage to guess the map.</h1>
           </div>
           <div id="aftergameInfo" hidden>
-          <h2 class="text-light">The correct map was: <a href="/" class="text-success" id="answer"></a></h2>
+          <h2 class="text-light">The correct map was: <a style="text-decoration-color:goldenrod;" href="/" target="_blank" rel="noopener noreferrer" class="text-success" id="answer"></a></h2>
           <button id="buttonSHARE" type="button" class="btn btn-success btn-lg">Share your result</button>
           </div>
           <br>
