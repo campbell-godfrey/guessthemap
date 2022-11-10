@@ -171,13 +171,12 @@ function handle_keydown(event) {
         // check it can find something before trying to select
         if(autoCompleteJS.search(document.getElementById("autoComplete").value, map_index.keys)) {
             autoCompleteJS.open();
-            if(autoCompleteJS.cursor < 0) {
-                autoCompleteJS.select(0);
-            } else {
+            // Use autocomplete selection if we have something selected
+            if(autoCompleteJS.cursor >= 0) {
                 autoCompleteJS.select();
             }
         }
-        event.preventDefault()
+        event.preventDefault();
     }
     // down arrow
     else if(event.keyCode == 40) {
