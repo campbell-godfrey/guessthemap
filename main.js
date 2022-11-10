@@ -9,7 +9,7 @@ maps:{map_name:{info:{date, difficulty, gamebanana, map_name, mapper}, image_pat
 */
 
 // complete ms string from new date of what is "the first day".
-const epoch = 1667862000000;
+const epoch = 1667926800000;
 const autoCompleteConfig = {
         placeHolder: "Search for a Map",
         data: {
@@ -78,17 +78,28 @@ function main_function(_map_index) {
     document.getElementById("buttonSHARE").onclick = share;
     // get current day (days since epoch utc), this might be wrong.. I hope not
     let current_day_el = document.getElementById("currentDay");
-    let date = new Date();
-    let minute_offset = date.getTimezoneOffset();
-    current_day = Math.floor(((date.getTime() - (minute_offset*6e4))-epoch)/8.64e7);
+    // Temporarily forces day 2 for everyone 
+    // because we are switching from local timezones to UTC
+    // REMOVE this later.
+    current_day = Math.max(2, get_current_day());
     current_day_el.innerText = current_day;
     current_object = map_index["maps"][order[(current_day % order.length)]];
     current_image = 0;
     current_guess = 0;
     guesses = [];
     select_image(0);
+    // next day calculations
+    let next_day_time = epoch + (current_day+1)*8.64e7;
+    {
+        // set little info text in how to play for current timezone.
+        let next_day_timezone_el = document.getElementById("nextDayInTimezone");
+        let hour_text = new Date(next_day_time).getHours().toString().padStart(2, "0");
+        let minute_text = new Date(next_day_time).getMinutes().toString().padStart(2, "0");
+        let utc_offset = -new Date().getTimezoneOffset()/60;
+        next_day_timezone_el.innerText = ` (${hour_text}:${minute_text} UTC ${utc_offset > 0 ? "+" : ""}${utc_offset})`;
+    }
     // countdown till next day
-    start_countdown();
+    start_countdown(next_day_time);
     // disable all buttons except first (weird refresh bug)
     for(let i = 1; i <= 5; i++) {
         document.getElementById(`button${i}`).disabled = true;
@@ -119,9 +130,21 @@ function main_function(_map_index) {
 
 }
 
+// gets current day based on epoch
+function get_current_day() {
+    /* Code that tried to account for timezone offset, we are now using utc again
+    let date = new Date();
+    let minute_offset = date.getTimezoneOffset();
+    let current_day = Math.floor(((date.getTime() - (minute_offset*6e4))-epoch)/8.64e7);
+    */
+
+    let current_day = Math.floor(((new Date().getTime())-epoch)/8.64e7);
+    return current_day;
+}
+
+// from current time to goal time (use .getTime())
 var day_countdown;
-function start_countdown() {
-    let goal = new Date().setHours(23,59,59,999);
+function start_countdown(goal) {
     let remaining = goal - new Date().getTime();
     // do it once immediately
     document.getElementById("timer").innerText = get_time_hh_mm_dd(remaining);
