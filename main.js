@@ -43,6 +43,8 @@ var current_object;
 var current_image;
 // guess nr
 var current_guess;
+// won game?
+var won_game = false;
 
 fetch('maps/map_index.json')
     .then(function (response) {
@@ -224,8 +226,10 @@ function end_game(win, restore=false) {
 
     if(win) {
         document.getElementById("youWin").hidden = false;
+        won_game = true;
     } else {
         document.getElementById("youLose").hidden = false;
+        won_game = false;
     }
 
     document.getElementById("aftergameInfo").hidden = false;
@@ -347,7 +351,7 @@ function share() {
     let amount = "";
     const emoji = {incorrect:"🟥", none:"⬛", correct:"🟩"};
     let emoji_representation = "";
-    if(current_guess >= 6) {
+    if(current_guess >= 6 && !won_game) {
         emoji_representation = Array(6).fill(emoji.incorrect).join(" ");
         amount = "X";
     } else {
