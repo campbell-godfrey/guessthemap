@@ -16,3 +16,9 @@ body {
     height: 280px;
     /*margin-bottom: 5px; for overflow scroll bar specifically on mobile phones */
 }
+
+.fade-out {
+    opacity: 1;
+    transition: 1s opacity;
+}
+  

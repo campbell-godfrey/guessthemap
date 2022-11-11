@@ -33,6 +33,8 @@ const order = [`Shivering Hollows - Mount Eggplant 2500M`,`Shade World`,`Solaris
 var autoCompleteJS;
 // map data
 var map_index;
+// all map keys in lower case;
+var map_keys_lower_case;
 // game data 
 var game_data;
 // current day
@@ -58,6 +60,7 @@ fetch('maps/map_index.json')
 function main_function(_map_index) {
     // setup
     map_index = _map_index;
+    map_keys_lower_case = map_index.keys.map(x => x.toLowerCase());
     // setup autocomplete
     try{
         autoCompleteConfig["data"]["src"] = _map_index["keys"]
@@ -149,7 +152,7 @@ function start_countdown(goal) {
     document.getElementById("timer").innerText = get_time_hh_mm_dd(remaining);
     // not gonna be that accurate but who cares
     day_countdown = setInterval(() => {
-        remaining = goal - new Date().getTime();
+        let remaining = goal - new Date().getTime();
         document.getElementById("timer").innerText = get_time_hh_mm_dd(remaining);
         // refresh website lmao
         if (remaining <= 0) {
@@ -195,9 +198,25 @@ function handle_keydown(event) {
 }
 
 function confirm() {
-    current_guess += 1;
     let map_chosen = document.getElementById("autoComplete").value.trim();
+    if(!map_keys_lower_case.includes(map_chosen.toLowerCase())) {
+        // Impossible guess, do not allow it and show a warning.
+        let invalid_text_el = document.getElementById("invalidText");
+        if (invalid_text_el.style.display == "none") {
+            invalid_text_el.style.display = "";
+            setTimeout(() => {        
+                invalid_text_el.style.opacity = 0;
+                setTimeout(() => {
+                    invalid_text_el.style.display = "none";
+                    invalid_text_el.style.opacity = 1;
+                }, 1000)
+            }, 3000);
+        }
+        return;
+    }
     document.getElementById("autoComplete").value = "";
+    autoCompleteJS.close();
+    current_guess += 1;
     let correct = check_guess(map_chosen);
 
     if(correct) {
