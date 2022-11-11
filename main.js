@@ -78,10 +78,7 @@ function main_function(_map_index) {
     document.getElementById("buttonSHARE").onclick = share;
     // get current day (days since epoch utc), this might be wrong.. I hope not
     let current_day_el = document.getElementById("currentDay");
-    // Temporarily forces day 2 for everyone 
-    // because we are switching from local timezones to UTC
-    // REMOVE this later.
-    current_day = Math.max(2, get_current_day());
+    current_day = get_current_day();
     current_day_el.innerText = current_day;
     current_object = map_index["maps"][order[(current_day % order.length)]];
     current_image = 0;
@@ -150,14 +147,15 @@ function start_countdown(goal) {
     document.getElementById("timer").innerText = get_time_hh_mm_dd(remaining);
     // not gonna be that accurate but who cares
     day_countdown = setInterval(() => {
+        remaining = goal - new Date().getTime();
         document.getElementById("timer").innerText = get_time_hh_mm_dd(remaining);
-        remaining -= 1000;
         // refresh website lmao
         if (remaining <= 0) {
             location.reload();
         }
     }, 1000);
     function get_time_hh_mm_dd(time_in_ms) {
+        if(time_in_ms < 0) return "00:00:00";
         let hrs = Math.floor(time_in_ms / (1000*60*60)); 
         let min = Math.floor((time_in_ms % (1000*60*60)) / (1000*60)); 
         let s = Math.floor((time_in_ms % (1000*60)) / (1000)); 
