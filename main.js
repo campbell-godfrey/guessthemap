@@ -366,6 +366,16 @@ function select_image(index) {
 }
 
 function share() {
+    function infoCopied() {
+        button.innerText = "Copied to Clipboard!";
+        setTimeout(() => {button.innerText = "Share your result";}, 1000);
+    }
+    function infoFailed() {
+        button.innerText = "Failed to copy :(";
+        setTimeout(() => {button.innerText = "Share your result";}, 1000);
+    }
+
+
     let button = document.getElementById("buttonSHARE");
     let amount = "";
     const emoji = {incorrect:"🟥", none:"⬛", correct:"🟩"};
@@ -389,13 +399,30 @@ function share() {
 
     navigator.clipboard.writeText(text).then(() => {
         // copied!
-        button.innerText = "Copied to Clipboard!";
-        setTimeout(() => {button.innerText = "Share your result";}, 1000);
+        infoCopied();
     },
     () => {
-        // copy failed
-        button.innerText = "Failed to copy :(";
-        setTimeout(() => {button.innerText = "Share your result";}, 1000);
+        // failed to copy
+        // try another method (I cannot test this)
+        try {
+            clipboard.write([
+                new ClipboardItem({
+                    "text/plain": new Blob([text], {
+                        type: "text/plain",
+                    })
+                })
+            ]).then(() => {
+                // copied!
+                infoCopied();
+            },
+            () => {
+                // failed to copy
+                infoFailed()
+            });
+        } catch (e) {
+            // failed to copy because methods don't exist, these exist on very few browsers.
+            infoFailed()
+        }
     })
 }
 
