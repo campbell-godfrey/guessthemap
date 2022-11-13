@@ -27,8 +27,45 @@ const autoCompleteConfig = {
                     const selection = event.detail.selection.value;
                     autoCompleteJS.input.value = selection;
                 },
-                keydown: handle_keydown
+                keydown: handle_keydown,
+                focus() {
+                    const inputValue = autoCompleteJS.input.value;
+        
+                    if (inputValue.length) autoCompleteJS.start();
+                },
             }
+        }, resultsList: {
+            element: (list, data) => {
+                if (!data.results.length) {
+                    // Create "No Results" message list element
+                    const message = document.createElement("p");
+                    message.setAttribute("class", "no_result");
+                    message.setAttribute("class", "wrap-text");
+                    message.setAttribute("style", "margin-bottom:0px");
+                    // Add message text content
+                    message.innerHTML = `Found no results for "${data.query}"`;
+                    // Add message list element to the list
+                    list.appendChild(message);
+                } else {
+                    // Show result amount
+                    
+                    const message = document.createElement("p");
+                    message.setAttribute("style", "font-size:small; margin-bottom:0px");
+                    // Add message text content
+                    message.innerHTML = `Found <span class="text-warning">${data.results.length}</span> result${data.results.length > 1 ? "s" : ""} for "${data.query}"`;
+                    // Add message list element to the list
+                    list.appendChild(message);
+    
+                    list.prepend(message);
+                }
+            },
+            maxResults: undefined,
+            noResults: true,
+        },
+        query: (input) => {
+            // if query changes go back to the top.
+            autoCompleteJS.goTo(0);
+            return input;
         },
 };
 // order, encrypted using Aurora patented B. Encryption (c)
