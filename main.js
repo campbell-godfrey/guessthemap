@@ -17,6 +17,10 @@ const autoCompleteConfig = {
         },
         resultItem: {
             highlight: true,
+            selected: "wrap-text",
+            element: (item, data) => {
+                item.setAttribute("title", data.value);
+            },
         }, events: {
             input: {
                 selection: (event) => {
