@@ -26,6 +26,7 @@ const autoCompleteConfig = {
                 selection: (event) => {
                     const selection = event.detail.selection.value;
                     autoCompleteJS.input.value = selection;
+                    checkInputValid(autoCompleteJS.input.value);
                 },
                 keydown: handle_keydown,
                 focus() {
@@ -63,8 +64,7 @@ const autoCompleteConfig = {
             noResults: true,
         },
         query: (input) => {
-            // Toggle OK button based on input.
-            toggleOkButton(map_keys_lower_case.includes(input));
+            checkInputValid(input);
             // if query changes go back to the top.
             autoCompleteJS.goTo(0);
             return input;
@@ -212,6 +212,14 @@ function start_countdown(goal) {
     }
 }
 
+/**
+ * Toggle OK button based on input.
+ * @param {*} input 
+ */
+function checkInputValid(input) {
+    toggleOkButton(map_keys_lower_case.includes(input.toLowerCase()));
+}
+
 function handle_keydown(event) {
     // Tab OR enter
     if(event.keyCode == 9 || event.keyCode == 13) {
@@ -222,6 +230,7 @@ function handle_keydown(event) {
             if(autoCompleteJS.cursor >= 0) {
                 autoCompleteJS.select();
             }
+            checkInputValid(document.getElementById("autoComplete").value);
         }
         event.preventDefault();
     }
