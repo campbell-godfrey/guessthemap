@@ -7,6 +7,7 @@
 #  maps:{map_name:{info:{date, difficulty, gamebanana_name, map_name, mapper}, 
 #  image_paths: [1,..,6]}]
 import json
+import io
 from os import listdir
 from os.path import isfile, join
 import urllib.parse
@@ -64,15 +65,15 @@ def create_map_dictionary(path):
                 map_obj["image_paths"].append(img)
             # Fill out info object
             info_obj = map_obj["info"]
-            #This is kinda ugly but eh
+            # This is kinda ugly but eh
             txt_files = [join(path, folder, fn) for fn in ["date.txt","difficulty.txt","gb.txt","name.txt","mapper.txt"]]
             obj_keys = ["date", "difficulty", "gamebanana", "map_name", "mapper"]
             for (key, file) in zip(obj_keys, txt_files):
-                with open(file) as f:
+                with io.open(file, mode="r", encoding="utf-8") as f:
                     info_obj[key] = f.readline()
             # lol. yep.
             name = ""
-            with open(join(path, folder, "name.txt")) as f:
+            with io.open((join(path, folder, "name.txt")), mode="r", encoding="utf-8") as f:
                 name = f.readline()
             obj["keys"].append(name)
             obj["maps"][name] = map_obj

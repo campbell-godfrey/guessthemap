@@ -104,11 +104,11 @@
         "Depleted Reservoir - Glacial Climb",
         "Depleted Reservoir - Jank Facility",
         "Depleted Reservoir - Solar Descent",
-        "Depleted Reservoir - Un d\u00c3\u00a9sordre enchev\u00c3\u00aatr\u00c3\u00a9 de couleurs",
+        "Depleted Reservoir - Un d\u00e9sordre enchev\u00eatr\u00e9 de couleurs",
         "Desolate Tower",
         "Dimension of Chaos",
         "Disconnected Summit",
-        "Donker19's (late) Birthday Special: Solaris 2\u00c2\u00bd",
+        "Donker19's (late) Birthday Special: Solaris 2\u00bd",
         "Donker19's Birthday Special - Sucrose Solaris",
         "Donker19's Birthday Special - Velvaris",
         "Dr. Machestik's Dynamite Castle",
@@ -127,7 +127,7 @@
         "Faded Celestial Remains",
         "Farewell D-Side - Final Goodbye",
         "Farewell Plus",
-        "Ferret\u00e2\u20ac\u2122s Micro Mountain",
+        "Ferret\u2019s Micro Mountain",
         "Flair Against Evidence",
         "Floatier Time",
         "Flooded Caves",
@@ -477,7 +477,7 @@
         "Wintry Cliffs",
         "World's Hardest Game - Celeste Remake",
         "wwoah!",
-        "Xoli's Birthday Special - a walk in the p\u00c3\u00a6rk",
+        "Xoli's Birthday Special - a walk in the p\u00e6rk",
         "Zerex's Z-Sides",
         "Zip Mover Contest 2021 - Aquatic Metropolis",
         "Zip Mover Contest 2021 - Ashen City",
@@ -2264,12 +2264,12 @@
                 "maps\\Depleted%20Reservoir%20-%20Solar%20Descent\\6.png"
             ]
         },
-        "Depleted Reservoir - Un d\u00c3\u00a9sordre enchev\u00c3\u00aatr\u00c3\u00a9 de couleurs": {
+        "Depleted Reservoir - Un d\u00e9sordre enchev\u00eatr\u00e9 de couleurs": {
             "info": {
                 "date": "April 2022",
                 "difficulty": "Advanced",
                 "gamebanana": "https://gamebanana.com/mods/372768",
-                "map_name": "Depleted Reservoir - Un d\u00c3\u00a9sordre enchev\u00c3\u00aatr\u00c3\u00a9 de couleurs",
+                "map_name": "Depleted Reservoir - Un d\u00e9sordre enchev\u00eatr\u00e9 de couleurs",
                 "mapper": "Skillshare Kirby"
             },
             "image_paths": [
@@ -2332,12 +2332,12 @@
                 "maps\\Disconnected%20Summit\\6.png"
             ]
         },
-        "Donker19's (late) Birthday Special: Solaris 2\u00c2\u00bd": {
+        "Donker19's (late) Birthday Special: Solaris 2\u00bd": {
             "info": {
                 "date": "March 2021",
                 "difficulty": "Advanced",
                 "gamebanana": "https://gamebanana.com/mods/150407",
-                "map_name": "Donker19's (late) Birthday Special: Solaris 2\u00c2\u00bd",
+                "map_name": "Donker19's (late) Birthday Special: Solaris 2\u00bd",
                 "mapper": "AliceQuasar"
             },
             "image_paths": [
@@ -2655,12 +2655,12 @@
                 "maps\\Farewell%20Plus\\6.png"
             ]
         },
-        "Ferret\u00e2\u20ac\u2122s Micro Mountain": {
+        "Ferret\u2019s Micro Mountain": {
             "info": {
                 "date": "December 2020",
                 "difficulty": "Advanced",
                 "gamebanana": "https://gamebanana.com/mods/150672",
-                "map_name": "Ferret\u00e2\u20ac\u2122s Micro Mountain",
+                "map_name": "Ferret\u2019s Micro Mountain",
                 "mapper": "MonsieurFerret"
             },
             "image_paths": [
@@ -3242,12 +3242,12 @@
                 "mapper": "AliceQuasar"
             },
             "image_paths": [
-                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad_s%20Tower\\1.png",
-                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad_s%20Tower\\2.png",
-                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad_s%20Tower\\3.png",
-                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad_s%20Tower\\4.png",
-                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad_s%20Tower\\5.png",
-                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad_s%20Tower\\6.png"
+                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad%27s%20Tower\\1.png",
+                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad%27s%20Tower\\2.png",
+                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad%27s%20Tower\\3.png",
+                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad%27s%20Tower\\4.png",
+                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad%27s%20Tower\\5.png",
+                "maps\\Iamdadbod%27s%20Birthday%20Special%20-%20Dad%27s%20Tower\\6.png"
             ]
         },
         "iamdadbod's Birthday Special: Golden Tower Ruins": {
@@ -3650,8 +3650,8 @@
                 "mapper": "te_79"
             },
             "image_paths": [
-                "maps\\Last%20Night\\1.png",
-                "maps\\Last%20Night\\2.png",
+                "maps\\Last%20Night\\1.jpeg",
+                "maps\\Last%20Night\\2.jpeg",
                 "maps\\Last%20Night\\3.png",
                 "maps\\Last%20Night\\4.png",
                 "maps\\Last%20Night\\5.png",
@@ -3956,19 +3956,19 @@
                 "mapper": "Quinnigan"
             },
             "image_paths": [
-                "maps\\Midway%20Contest%202022%20-%20Cupid_s%20Garden\\1.png",
-                "maps\\Midway%20Contest%202022%20-%20Cupid_s%20Garden\\2.png",
-                "maps\\Midway%20Contest%202022%20-%20Cupid_s%20Garden\\3.png",
-                "maps\\Midway%20Contest%202022%20-%20Cupid_s%20Garden\\4.png",
-                "maps\\Midway%20Contest%202022%20-%20Cupid_s%20Garden\\5.png",
-                "maps\\Midway%20Contest%202022%20-%20Cupid_s%20Garden\\6.png"
+                "maps\\Midway%20Contest%202022%20-%20Cupid%27s%20Garden\\1.png",
+                "maps\\Midway%20Contest%202022%20-%20Cupid%27s%20Garden\\2.png",
+                "maps\\Midway%20Contest%202022%20-%20Cupid%27s%20Garden\\3.png",
+                "maps\\Midway%20Contest%202022%20-%20Cupid%27s%20Garden\\4.png",
+                "maps\\Midway%20Contest%202022%20-%20Cupid%27s%20Garden\\5.png",
+                "maps\\Midway%20Contest%202022%20-%20Cupid%27s%20Garden\\6.png"
             ]
         },
         "Midway Contest 2022 - Drafty Daze": {
             "info": {
                 "date": "July 2022",
                 "difficulty": "Intermediate",
-                "gamebanana": "",
+                "gamebanana": "https://gamebanana.com/mods/387247",
                 "map_name": "Midway Contest 2022 - Drafty Daze",
                 "mapper": "Flamecrafter113"
             },
@@ -3985,7 +3985,7 @@
             "info": {
                 "date": "July 2022",
                 "difficulty": "Intermediate",
-                "gamebanana": "",
+                "gamebanana": "https://gamebanana.com/mods/387247",
                 "map_name": "Midway Contest 2022 - Effete",
                 "mapper": "BossSauce"
             },
@@ -4002,7 +4002,7 @@
             "info": {
                 "date": "July 2022",
                 "difficulty": "Intermediate",
-                "gamebanana": "",
+                "gamebanana": "https://gamebanana.com/mods/387247",
                 "map_name": "Midway Contest 2022 - Ember Paradise",
                 "mapper": "ricky06"
             },
@@ -8605,12 +8605,12 @@
                 "maps\\wwoah%21\\6.png"
             ]
         },
-        "Xoli's Birthday Special - a walk in the p\u00c3\u00a6rk": {
+        "Xoli's Birthday Special - a walk in the p\u00e6rk": {
             "info": {
                 "date": "May 2022",
                 "difficulty": "Intermediate",
                 "gamebanana": "https://gamebanana.com/mods/375905",
-                "map_name": "Xoli's Birthday Special - a walk in the p\u00c3\u00a6rk",
+                "map_name": "Xoli's Birthday Special - a walk in the p\u00e6rk",
                 "mapper": "AliceQuasar"
             },
             "image_paths": [
