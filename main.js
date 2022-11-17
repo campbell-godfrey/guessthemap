@@ -44,7 +44,7 @@ const autoCompleteConfig = {
                     message.setAttribute("class", "wrap-text");
                     message.setAttribute("style", "margin-bottom:0px");
                     // Add message text content
-                    message.innerHTML = `Found no results for "${data.query}"`;
+                    message.innerHTML = `Found no results for "${data.query}"${getDifficultyData("disableAutocomplete") ? " :)" : ""}`;
                     // Add message list element to the list
                     list.appendChild(message);
                 } else {
@@ -67,6 +67,9 @@ const autoCompleteConfig = {
             checkInputValid(input);
             // if query changes go back to the top.
             autoCompleteJS.goTo(0);
+            if(getDifficultyData("disableAutocomplete")) {
+                input = `​` + input;
+            }
             return input;
         },
 };
@@ -92,6 +95,8 @@ var current_image;
 var current_guess;
 // won game?
 var won_game = false;
+// difficulty of game (funny meme)
+var difficulty;
 
 fetch('maps/map_index.json')
     .then(function (response) {
@@ -125,6 +130,10 @@ function main_function(_map_index) {
     document.getElementById("buttonOK").onclick = confirm;
     document.getElementById("buttonSKIP").onclick = skip;
     document.getElementById("buttonSHARE").onclick = share;
+
+    document.getElementById("diffBtnRadio1").onclick = () => setDifficulty(0);
+    document.getElementById("diffBtnRadio2").onclick = () => setDifficulty(1);
+    document.getElementById("diffBtnRadio3").onclick = increaseDifficulty;
     // get current day (days since epoch utc), this might be wrong.. I hope not
     let current_day_el = document.getElementById("currentDay");
     // debug day
@@ -152,8 +161,9 @@ function main_function(_map_index) {
     for(let i = 1; i <= 5; i++) {
         document.getElementById(`button${i}`).disabled = true;
     }
-    // restore guesses
+    // restore data
     game_data = get_cookie_data();
+    // restore guesses
     if(game_data.last_day_played != current_day) {
         game_data.guesses = [];
         save_data();
@@ -175,6 +185,14 @@ function main_function(_map_index) {
             select_image(game_data.guesses.length);
         } 
     }
+    // restore difficulty
+    // exists and is number
+    if (game_data.difficulty != undefined && typeof game_data.difficulty.toFixed) {
+        difficulty = game_data.difficulty;
+    } else {
+        difficulty = 0;
+    }
+    ensureDifficulty();
 
 }
 
@@ -219,7 +237,11 @@ function start_countdown(goal) {
  * @param {text} input 
  */
 function checkInputValid(input) {
-    toggleOkButton(map_keys_lower_case.includes(input.toLowerCase()));
+    if(getDifficultyData("validOnly")) {
+        toggleOkButton(map_keys_lower_case.includes(input.toLowerCase()));
+    } else {
+        toggleOkButton(true);
+    }
 }
 
 function handle_keydown(event) {
@@ -268,7 +290,7 @@ function handle_keydown(event) {
 
 function confirm() {
     let map_chosen = document.getElementById("autoComplete").value.trim();
-    if(!map_keys_lower_case.includes(map_chosen.toLowerCase())) {
+    if(!map_keys_lower_case.includes(map_chosen.toLowerCase()) && getDifficultyData("validOnly")) {
         // Impossible guess, do not allow it and show a warning.
         let invalid_text_el = document.getElementById("invalidText");
         if (invalid_text_el.style.display == "none") {
@@ -284,7 +306,7 @@ function confirm() {
         return;
     }
     document.getElementById("autoComplete").value = "";
-    toggleOkButton(false);
+    if(getDifficultyData("validOnly")) toggleOkButton(false);
     autoCompleteJS.close();
     current_guess += 1;
     let correct = check_guess(map_chosen);
@@ -416,18 +438,23 @@ function select_image(index) {
     if (index < 0 || index > 5) return console.log("Index out of bounds: "+index);
     let image_element = document.getElementById("gameImage");
     set_image_to_blob_url(image_element, current_object.image_paths[index]);
+    image_element.style.filter = getDifficultyData("filter");
     
     let game_info_element = document.getElementById("gameInfo");
-    if (index == 3) {
-        game_info_element.innerText = `Uploaded on: ${current_object["info"]["date"]}`;
-    } 
-    else if (index == 4) {
-        game_info_element.innerText = `Difficulty: ${current_object["info"]["difficulty"]}`;
-    }
-    else if (index == 5) {
-        game_info_element.innerText = `Mapped by: ${current_object["info"]["mapper"]}`;
+    if(getDifficultyData("noHints")) {
+        game_info_element.innerText = `​`;
     } else {
-        game_info_element.innerText = `​`; // no width space so it still "exists" and has height
+        if (index == 3) {
+            game_info_element.innerText = `Uploaded on: ${current_object["info"]["date"]}`;
+        }
+        else if (index == 4) {
+            game_info_element.innerText = `Difficulty: ${current_object["info"]["difficulty"]}`;
+        }
+        else if (index == 5) {
+            game_info_element.innerText = `Mapped by: ${current_object["info"]["mapper"]}`;
+        } else {
+            game_info_element.innerText = `​`; // no width space so it still "exists" and has height
+        } 
     }
     document.getElementById(`button${current_image}`).className = "btn btn-dark";
     document.getElementById(`button${index}`).className = "btn btn-secondary";
@@ -465,7 +492,7 @@ function share() {
         }).join(" ");
         amount = current_guess;
     }
-    let  text = `Guess the Map #${current_day}\n\n${emoji_representation} ${amount}/6\n\nhttps://guessthemap.com`;
+    let  text = `Guess the Map #${current_day}${difficulty > 0 ? " Mode: "+getDifficultyData("name") : ""}\n\n${emoji_representation} ${amount}/6\n\nhttps://guessthemap.com`;
 
     navigator.clipboard.writeText(text).then(() => {
         // copied!
@@ -494,6 +521,164 @@ function share() {
             infoFailed()
         }
     })
+}
+
+/**
+ * 0 - normal
+ * 1 - Hard (grayscale)
+ * 2 - Extra (grayscale + no hints)
+ * 3 - Extra+ (grayscale + no hints + blur 3px)
+ * 4 - Extra++ (grayscale + no hints + blur 3px + Contrast 500%)
+ * 5 - Extra+++ (grayscale + no hints + blur 10px + Contrast 500%)
+ * 6 - ??? (no hints + no autocomplete + all words are accepted)
+ */
+
+/**
+ * Returns boolean or string depending on requested info and difficulty setting.
+ * @param {string} reqestedPart Either: "filter", "noHints", "disableAutocomplete", "validOnly", "info", "name" and "colorClass"
+ */
+function getDifficultyData(requestedPart) {
+    switch(requestedPart) {
+        case "filter":
+            switch(difficulty) {
+                case 1:
+                case 2:
+                    return "grayscale(100%)";
+                case 3:
+                    return "grayscale(100%) blur(3px)";
+                case 4:
+                    return "grayscale(100%) blur(3px) contrast(500%)";
+                case 5:
+                    return "grayscale(100%) blur(10px) contrast(500%)";
+                default:
+                    return "";
+            }
+        case "noHints":
+            return difficulty >= 2;
+        case "disableAutocomplete":
+            return difficulty >= 6;
+        case "validOnly":
+            return difficulty < 6;
+        case "info":
+            switch(difficulty) {
+                case 0:
+                    return "none."
+                case 1:
+                    return "grayscale."
+                case 2:
+                    return "grayscale and no hints."
+                case 3:
+                    return "grayscale, no hints and blur."
+                case 4:
+                    return "grayscale, no hints, blur and contrast."
+                case 5:
+                    return "grayscale, no hints, blur, contrast, blur and more blur (+ a bit of blur)."
+                case 6:
+                    return "no hints, no autocomplete and all words are accepted :D"
+                default:
+                    return "error. Are you playing with the difficulty?"
+            }
+        case "name":
+            switch(difficulty) {
+                case 0:
+                    return "Normal"
+                case 1:
+                    return "Hard"
+                case 2:
+                    return "Extra"
+                case 3:
+                    return "Extra+"
+                case 4:
+                    return "Extra++"
+                case 5:
+                    return "Extra+++"
+                case 6:
+                    return "lol"
+                default:
+                    return "error. Are you playing with the difficulty?"
+            }
+        case "colorClass":
+            switch(difficulty) {
+                default:
+                case 0:
+                    return ""
+                case 1:
+                    return "text-secondary"
+                case 2:
+                    return "text-info"
+                case 3:
+                    return "text-primary"
+                case 4:
+                    return "text-warning"
+                case 5:
+                    return "text-danger"
+                case 6:
+                    return "text-success"
+            }
+        default:
+            throw new TypeError("Input not filter, noHints, disableAutocomplete, validOnly, info or colorClass.");
+    }
+}
+
+function ensureDifficulty() {
+    document.getElementById("gameImage").style.filter = getDifficultyData("filter");
+    select_image(current_image);
+    document.getElementById("difficultyAdditions").innerText = getDifficultyData("info"); 
+    if (difficulty > 2) {
+        document.getElementById("extraDifficultyText").innerText = getDifficultyData("name");
+        document.getElementById("currDifficulty").innerText = getDifficultyData("name");
+    } else {
+        document.getElementById("currDifficulty").innerText = getDifficultyData("name");
+        document.getElementById("extraDifficultyText").innerText = "Extra";
+    }
+
+    for(let i = 1; i <= 3; i++) {
+        if(i-1 != difficulty && !(i-1 == 2 && difficulty >= 2)) {
+            document.getElementById("diffBtnRadio"+i).removeAttribute("checked");
+        } else {
+            document.getElementById("diffBtnRadio"+i).setAttribute("checked","");
+        }
+    }
+    if(!getDifficultyData("validOnly")) {
+        toggleOkButton(true);
+    }
+    document.getElementById("titleText").className = "navbar-brand "+getDifficultyData("colorClass")
+    lockDifficulty();
+}
+
+function lockDifficulty() {
+    if(current_guess > 0) {
+        if(difficulty <= 1) document.getElementById("diffBtnRadio2").setAttribute("disabled","");
+        if(difficulty <= 2) document.getElementById("diffBtnRadio3").setAttribute("disabled","");
+    }
+}
+
+/**
+ * 
+ * @param {int} newDifficulty 0 <= new_difficulty <= 6 
+ */
+function setDifficulty(newDifficulty) {
+    if(current_guess > 0 && newDifficulty > difficulty) return;
+    difficulty = newDifficulty;
+    ensureDifficulty();
+    save_data();
+}
+ 
+// increases difficulty, if under 2 sets it to 2, 6 loops to 2.
+function increaseDifficulty() {
+    if(current_guess > 0 && difficulty == 2) return;
+
+    if(current_guess > 0 && difficulty > 2) {
+        difficulty = (difficulty - 1) % 7;
+    } else {
+        difficulty = (difficulty + 1) % 7;
+    }
+
+    if(difficulty < 2) {
+        difficulty = 2;
+    }
+    ensureDifficulty();
+    save_data();
 }
 
 function fillStats() {
@@ -575,7 +760,7 @@ function create_guess_distribution() {
  * Saves data to cookie
  */
 function save_data() {
-    set_cookie_data(game_data.guesses, current_day, game_data.last_day_completed, game_data.win_distribution, game_data.streak, game_data.max_streak)
+    set_cookie_data(game_data.guesses, current_day, game_data.last_day_completed, game_data.win_distribution, game_data.streak, game_data.max_streak, difficulty)
 }
 
 function reset_cookie_data() {
@@ -584,14 +769,14 @@ function reset_cookie_data() {
 
 /**
  * 
- * @returns {{Array, int, Array, int, int}} Object with guesses, last_day_played, win_distribution, streak and max_streak
+ * @returns {{Array, int, Array, int, int}} Object with guesses, last_day_played, win_distribution, streak, max_streak and difficulty.
  */
 function get_cookie_data() {
     data = document.cookie.split(";").find(x => x.startsWith("data="))?.split("=")[1];
     if(data != undefined) {
         return JSON.parse(decodeURIComponent(data));
     } else {
-        return {guesses:[], last_day_played:-1, last_day_completed:-1, win_distribution:Array(7).fill(0), streak:0, max_streak:0}
+        return {guesses:[], last_day_played:-1, last_day_completed:-1, win_distribution:Array(7).fill(0), streak:0, max_streak:0, difficulty:0}
     }
 }
 
@@ -603,9 +788,10 @@ function get_cookie_data() {
  * @param {Array} win_distribution 
  * @param {int} streak 
  * @param {int} max_streak 
+ * @param {int} difficulty 
  */
-function set_cookie_data(guesses, last_day_played, last_day_completed, win_distribution, streak, max_streak) {
-    value={guesses, last_day_played, last_day_completed, win_distribution, streak, max_streak}
+function set_cookie_data(guesses, last_day_played, last_day_completed, win_distribution, streak, max_streak, difficulty) {
+    value={guesses, last_day_played, last_day_completed, win_distribution, streak, max_streak, difficulty}
     document.cookie = "data="+encodeURIComponent(JSON.stringify(value))+";max-age=315360000;samesite=lax"
 }
 
