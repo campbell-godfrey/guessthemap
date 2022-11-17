@@ -492,7 +492,7 @@ function share() {
         }).join(" ");
         amount = current_guess;
     }
-    let  text = `Guess the Map #${current_day}${difficulty > 0 ? " Mode: "+getDifficultyData("name") : ""}\n\n${emoji_representation} ${amount}/6\n\nhttps://guessthemap.com`;
+    let  text = `Guess the Map #${current_day}${difficulty > 0 ? " - Mode: "+getDifficultyData("name") : ""}\n\n${emoji_representation} ${amount}/6\n\nhttps://guessthemap.com`;
 
     navigator.clipboard.writeText(text).then(() => {
         // copied!
@@ -616,7 +616,7 @@ function getDifficultyData(requestedPart) {
                     return "text-success"
             }
         default:
-            throw new TypeError("Input not filter, noHints, disableAutocomplete, validOnly, info or colorClass.");
+            throw new TypeError("Input not filter, noHints, disableAutocomplete, validOnly, info, name or colorClass.");
     }
 }
 
