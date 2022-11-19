@@ -4551,8 +4551,8 @@
                 "mapper": "OkNano"
             },
             "image_paths": [
-                "maps\\Nano%27s%20Hecksides%20-%20Metal%20Maze\\1.jpeg",
-                "maps\\Nano%27s%20Hecksides%20-%20Metal%20Maze\\2.png",
+                "maps\\Nano%27s%20Hecksides%20-%20Metal%20Maze\\1.png",
+                "maps\\Nano%27s%20Hecksides%20-%20Metal%20Maze\\2.jpeg",
                 "maps\\Nano%27s%20Hecksides%20-%20Metal%20Maze\\3.png",
                 "maps\\Nano%27s%20Hecksides%20-%20Metal%20Maze\\4.png",
                 "maps\\Nano%27s%20Hecksides%20-%20Metal%20Maze\\5.png",
@@ -4789,8 +4789,8 @@
                 "mapper": "PPNyan & Ru"
             },
             "image_paths": [
-                "maps\\October\\1.png",
-                "maps\\October\\2.png",
+                "maps\\October\\1.jpeg",
+                "maps\\October\\2.jpeg",
                 "maps\\October\\3.png",
                 "maps\\October\\4.png",
                 "maps\\October\\5.png",
