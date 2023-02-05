@@ -93,6 +93,8 @@ var current_object;
 var current_image;
 // guess nr
 var current_guess;
+// game completed
+var game_completed = false;
 // won game?
 var won_game = false;
 // difficulty of game (funny meme)
@@ -177,8 +179,10 @@ function main_function(_map_index) {
         // fix the data stuff
         current_guess = game_data.guesses.length;
         if(check_guess(game_data.guesses[game_data.guesses.length-1])) {
+            game_completed = true;
             end_game(true, true);
         } else if(game_data.guesses.length >= 6) {
+            game_completed = true;
             end_game(false, true);
         } else if (game_data.guesses.length <= 5) {
             document.getElementById(`button${game_data.guesses.length}`).disabled = false;
@@ -289,6 +293,7 @@ function handle_keydown(event) {
 }
 
 function confirm() {
+    if(game_completed) return;
     let map_chosen = document.getElementById("autoComplete").value.trim();
     if(!map_keys_lower_case.includes(map_chosen.toLowerCase()) && getDifficultyData("validOnly")) {
         // Impossible guess, do not allow it and show a warning.
@@ -319,6 +324,7 @@ function confirm() {
 }
 
 function skip() {
+    if(game_completed) return;
     current_guess += 1;
     incorrect_guess("Skipped!");
 }
@@ -333,6 +339,8 @@ function check_guess(guess) {
 }
 
 function end_game(win, restore=false) {
+    game_completed = true;
+
     document.getElementById("input").hidden = true;
 
     if(win) {
