@@ -429,6 +429,7 @@
         "The Hacklands",
         "The Jellies' Gelatinous Sanctuary",
         "The Kayonara Collection",
+        "The Mysterious Area",
         "the road less traveled",
         "The Seaside C-Side",
         "The Secret of Celeste Mountain",
@@ -7787,6 +7788,23 @@
                 "maps\\The%20Kayonara%20Collection\\4.png",
                 "maps\\The%20Kayonara%20Collection\\5.png",
                 "maps\\The%20Kayonara%20Collection\\6.png"
+            ]
+        },
+        "The Mysterious Area": {
+            "info": {
+                "date": "February 2022",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/405500",
+                "map_name": "The Mysterious Area",
+                "mapper": "Guitarlione"
+            },
+            "image_paths": [
+                "maps\\The%20Mysterious%20Area\\1.png",
+                "maps\\The%20Mysterious%20Area\\2.png",
+                "maps\\The%20Mysterious%20Area\\3.png",
+                "maps\\The%20Mysterious%20Area\\4.png",
+                "maps\\The%20Mysterious%20Area\\5.png",
+                "maps\\The%20Mysterious%20Area\\6.png"
             ]
         },
         "the road less traveled": {
