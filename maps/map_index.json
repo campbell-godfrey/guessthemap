@@ -2,8 +2,6 @@
     "keys": [
         "15-Second Jail Time",
         "24x33",
-        "5b_Garbage_Version",
-        "7d(single dash ver)",
         "A Christmas Night",
         "A New Beginning",
         "A Rainy Night",
@@ -17,15 +15,11 @@
         "ABuffZucchini's Various Maps - The Abyss",
         "ABuffZucchini's Various Maps - The Complex",
         "ABuffZucchini's Various Maps - Windchill",
-        "Abyss",
         "Adranos",
         "Albcat's Birthday Special - Cosmic Underwater",
-        "Alice's Gay Week - alice made gm :(",
         "Alice's Gay Week - de",
-        "Alice's Gay Week - hi lennygold",
         "Alice's Gay Week - i forgor",
         "Alice's Gay Week - lesbomagnetic field",
-        "Alice's Gay Week - the celeste mapper struggle",
         "Alice's Gay Week - volaris",
         "Alice's Gay Week 2 - 11-Example",
         "Alice's Gay Week 2 - de 2",
@@ -36,19 +30,12 @@
         "Alice's Gay Week 2 - wetty wet waterfall",
         "AliceQuasar's BDay Special - Hang Out With OkNano!",
         "AliceQuasar's Birthday Special - Fennec Forest",
-        "All gameplay no deco",
-        "Amber Terminus",
         "Anomaly chapter0",
         "Another Farewell Map",
-        "Anubi",
         "Anything is Possible",
-        "Archaic Terrace",
         "Arphimigon's D-Sides",
-        "Asleep",
         "Astraeus",
-        "Astral Tower",
         "At Dawn",
-        "Autumnal Heights",
         "Avian Ascension",
         "Avpocalypse",
         "Balls Mines where they mine Ball-Shaped Gemstones",
@@ -97,7 +84,6 @@
         "Dashless Collab - The Long Way",
         "Dashless Collab - The Thief",
         "DELTASCENEONE",
-        "Delusional Canopy",
         "Depleted Reservoir - Abandoned Aqueduct",
         "Depleted Reservoir - BREAKTHROUGH",
         "Depleted Reservoir - City Limits",
@@ -160,7 +146,6 @@
         "Hexagon Force",
         "Hibernation Apex",
         "How To Make A Map: For a Scrapped Contest",
-        "iamdadbod Collab 2018",
         "Iamdadbod's Birthday Special - Dad's Tower",
         "iamdadbod's Birthday Special: Golden Tower Ruins",
         "iceCream's Ultras",
@@ -247,7 +232,6 @@
         "Nyan's Balls Week - Dashless Pride",
         "Nyan's Balls Week - Nyan Made GM :D",
         "Nyan's Balls Week - pls ultra",
-        "Nyan's Balls Week - POV: You Did Ultra",
         "Nyan's Balls Week - POV: You Didn't Ultra",
         "Nyan's Balls Week - Rick and Morty",
         "Nyan's Balls Week - Temporal Toilet",
@@ -323,6 +307,30 @@
         "Shivering Hollows - The Sumpquel",
         "Shivering Hollows - Ultra Swan Slide",
         "Shivering Hollows - Why do they call it oven when you of in the cold food out hot eat the food",
+        "Shrimp Contest -  Animal (Shrimp) Crackers in my Soup",
+        "Shrimp Contest -  As Shrimple (Shrimp Temple) as That",
+        "Shrimp Contest -  Charred Cocktail Sauce Spaceventure",
+        "Shrimp Contest -  DeepFried",
+        "Shrimp Contest -  elderly location",
+        "Shrimp Contest -  Fishnet Dimension",
+        "Shrimp Contest -  Flower Bumper Mountain",
+        "Shrimp Contest -  Frosted Bonkrill's Slumber",
+        "Shrimp Contest -  Heart of the Shrimp",
+        "Shrimp Contest -  into the blue",
+        "Shrimp Contest -  Krill Bay",
+        "Shrimp Contest -  Krillosophical conshrimperations",
+        "Shrimp Contest -  Scallop Sanctorium",
+        "Shrimp Contest -  Scrumptious Scampiscape",
+        "Shrimp Contest -  Shrimp 2500 Meters",
+        "Shrimp Contest -  Shrimpsong",
+        "Shrimp Contest -  So, You're Telling Me a",
+        "Shrimp Contest -  The day Chaos took over",
+        "Shrimp Contest -  The Green Temple",
+        "Shrimp Contest -  The Registry",
+        "Shrimp Contest -  The Shrimpside",
+        "Shrimp Contest -  The Tides from The Sea",
+        "Shrimp Contest - Blackgrounds",
+        "Shrimp Contest - srimp's curse",
         "Shrouded Thoughts",
         "Sib",
         "Sienna's Realm",
@@ -378,14 +386,12 @@
         "Sunset Mountain",
         "Sunset Rise",
         "Sunset Skyway",
-        "Switch Mountain",
         "Switchland",
         "Sylvan Grove - ABuffZucchini's Peak",
         "Sylvan Grove - Amethyst Grotto",
         "Sylvan Grove - Anything Is Possible Christmas Edition",
         "Sylvan Grove - bring it back now yall",
         "Sylvan Grove - Ethereal Hollows",
-        "Sylvan Grove - Ineluctable Modality of the Sump",
         "Sylvan Grove - Levels",
         "Sylvan Grove - Lucid Cliffside Too",
         "Sylvan Grove - Madeline goes out to get her dash back",
@@ -472,7 +478,6 @@
         "Void",
         "Wasted Meadow",
         "Water Space",
-        "Waterbear Mountain",
         "Winged Station",
         "Winter Collab Birthday Special - Bissy Sanctuary",
         "Wintry Cliffs",
@@ -529,40 +534,6 @@
                 "maps\\24x33\\4.png",
                 "maps\\24x33\\5.png",
                 "maps\\24x33\\6.png"
-            ]
-        },
-        "5b_Garbage_Version": {
-            "info": {
-                "date": "October 2019",
-                "difficulty": "Grandmaster",
-                "gamebanana": "https://discord.com/channels/403698615446536203/455088502548463627/638064624482385970",
-                "map_name": "5b_Garbage_Version",
-                "mapper": "Monika"
-            },
-            "image_paths": [
-                "maps\\5b_Garbage_Version\\1.png",
-                "maps\\5b_Garbage_Version\\2.png",
-                "maps\\5b_Garbage_Version\\3.png",
-                "maps\\5b_Garbage_Version\\4.png",
-                "maps\\5b_Garbage_Version\\5.png",
-                "maps\\5b_Garbage_Version\\6.png"
-            ]
-        },
-        "7d(single dash ver)": {
-            "info": {
-                "date": "January 2020",
-                "difficulty": "Grandmaster",
-                "gamebanana": "https://gamebanana.com/mods/150350",
-                "map_name": "7d(single dash ver)",
-                "mapper": "fishtank_underflow"
-            },
-            "image_paths": [
-                "maps\\7d%28single%20dash%20ver%29\\1.png",
-                "maps\\7d%28single%20dash%20ver%29\\2.png",
-                "maps\\7d%28single%20dash%20ver%29\\3.png",
-                "maps\\7d%28single%20dash%20ver%29\\4.png",
-                "maps\\7d%28single%20dash%20ver%29\\5.png",
-                "maps\\7d%28single%20dash%20ver%29\\6.png"
             ]
         },
         "A Christmas Night": {
@@ -786,23 +757,6 @@
                 "maps\\ABuffZucchini%27s%20Various%20Maps%20-%20Windchill\\6.png"
             ]
         },
-        "Abyss": {
-            "info": {
-                "date": "January 2021",
-                "difficulty": "Advanced",
-                "gamebanana": "https://gamebanana.com/mods/150355",
-                "map_name": "Abyss",
-                "mapper": "Indecx"
-            },
-            "image_paths": [
-                "maps\\Abyss\\1.png",
-                "maps\\Abyss\\2.png",
-                "maps\\Abyss\\3.png",
-                "maps\\Abyss\\4.png",
-                "maps\\Abyss\\5.png",
-                "maps\\Abyss\\6.png"
-            ]
-        },
         "Adranos": {
             "info": {
                 "date": "May 2021",
@@ -837,23 +791,6 @@
                 "maps\\Albcat%27s%20Birthday%20Special%20-%20Cosmic%20Underwater\\6.png"
             ]
         },
-        "Alice's Gay Week - alice made gm :(": {
-            "info": {
-                "date": "July 2021",
-                "difficulty": "Grandmaster",
-                "gamebanana": "https://gamebanana.com/mods/303067",
-                "map_name": "Alice's Gay Week - alice made gm :(",
-                "mapper": "AliceQuasar"
-            },
-            "image_paths": [
-                "maps\\Alice%27s%20Gay%20Week%20-%20alice%20made%20gm%20%28\\1.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20alice%20made%20gm%20%28\\2.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20alice%20made%20gm%20%28\\3.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20alice%20made%20gm%20%28\\4.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20alice%20made%20gm%20%28\\5.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20alice%20made%20gm%20%28\\6.png"
-            ]
-        },
         "Alice's Gay Week - de": {
             "info": {
                 "date": "July 2021",
@@ -869,23 +806,6 @@
                 "maps\\Alice%27s%20Gay%20Week%20-%20de\\4.png",
                 "maps\\Alice%27s%20Gay%20Week%20-%20de\\5.png",
                 "maps\\Alice%27s%20Gay%20Week%20-%20de\\6.png"
-            ]
-        },
-        "Alice's Gay Week - hi lennygold": {
-            "info": {
-                "date": "July 2021",
-                "difficulty": "Advanced",
-                "gamebanana": "https://gamebanana.com/mods/303067",
-                "map_name": "Alice's Gay Week - hi lennygold",
-                "mapper": "AliceQuasar"
-            },
-            "image_paths": [
-                "maps\\Alice%27s%20Gay%20Week%20-%20hi%20lennygold\\1.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20hi%20lennygold\\2.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20hi%20lennygold\\3.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20hi%20lennygold\\4.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20hi%20lennygold\\5.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20hi%20lennygold\\6.png"
             ]
         },
         "Alice's Gay Week - i forgor": {
@@ -920,23 +840,6 @@
                 "maps\\Alice%27s%20Gay%20Week%20-%20lesbomagnetic%20field\\4.png",
                 "maps\\Alice%27s%20Gay%20Week%20-%20lesbomagnetic%20field\\5.png",
                 "maps\\Alice%27s%20Gay%20Week%20-%20lesbomagnetic%20field\\6.png"
-            ]
-        },
-        "Alice's Gay Week - the celeste mapper struggle": {
-            "info": {
-                "date": "July 2021",
-                "difficulty": "Advanced",
-                "gamebanana": "https://gamebanana.com/mods/303067",
-                "map_name": "Alice's Gay Week - the celeste mapper struggle",
-                "mapper": "AliceQuasar"
-            },
-            "image_paths": [
-                "maps\\Alice%27s%20Gay%20Week%20-%20the%20celeste%20mapper%20struggle\\1.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20the%20celeste%20mapper%20struggle\\2.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20the%20celeste%20mapper%20struggle\\3.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20the%20celeste%20mapper%20struggle\\4.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20the%20celeste%20mapper%20struggle\\5.png",
-                "maps\\Alice%27s%20Gay%20Week%20-%20the%20celeste%20mapper%20struggle\\6.png"
             ]
         },
         "Alice's Gay Week - volaris": {
@@ -1109,40 +1012,6 @@
                 "maps\\AliceQuasar%27s%20Birthday%20Special%20-%20Fennec%20Forest\\6.png"
             ]
         },
-        "All gameplay no deco": {
-            "info": {
-                "date": "March 2021",
-                "difficulty": "Advanced",
-                "gamebanana": "https://gamebanana.com/mods/150357",
-                "map_name": "All gameplay no deco",
-                "mapper": "NormalgamerCeleste"
-            },
-            "image_paths": [
-                "maps\\All%20gameplay%20no%20deco\\1.png",
-                "maps\\All%20gameplay%20no%20deco\\2.png",
-                "maps\\All%20gameplay%20no%20deco\\3.png",
-                "maps\\All%20gameplay%20no%20deco\\4.png",
-                "maps\\All%20gameplay%20no%20deco\\5.png",
-                "maps\\All%20gameplay%20no%20deco\\6.png"
-            ]
-        },
-        "Amber Terminus": {
-            "info": {
-                "date": "September 2021",
-                "difficulty": "Expert-Grandmaster",
-                "gamebanana": "https://gamebanana.com/mods/318890",
-                "map_name": "Amber Terminus",
-                "mapper": "Cabob"
-            },
-            "image_paths": [
-                "maps\\Amber%20Terminus\\1.png",
-                "maps\\Amber%20Terminus\\2.png",
-                "maps\\Amber%20Terminus\\3.png",
-                "maps\\Amber%20Terminus\\4.png",
-                "maps\\Amber%20Terminus\\5.png",
-                "maps\\Amber%20Terminus\\6.png"
-            ]
-        },
         "Anomaly chapter0": {
             "info": {
                 "date": "June 2022",
@@ -1177,23 +1046,6 @@
                 "maps\\Another%20Farewell%20Map\\6.png"
             ]
         },
-        "Anubi": {
-            "info": {
-                "date": "January 2021",
-                "difficulty": "Advanced",
-                "gamebanana": "https://gamebanana.com/mods/150360",
-                "map_name": "Anubi",
-                "mapper": "LIER0"
-            },
-            "image_paths": [
-                "maps\\Anubi\\1.png",
-                "maps\\Anubi\\2.png",
-                "maps\\Anubi\\3.png",
-                "maps\\Anubi\\4.png",
-                "maps\\Anubi\\5.png",
-                "maps\\Anubi\\6.png"
-            ]
-        },
         "Anything is Possible": {
             "info": {
                 "date": "June 2022",
@@ -1209,23 +1061,6 @@
                 "maps\\Anything%20is%20Possible\\4.png",
                 "maps\\Anything%20is%20Possible\\5.png",
                 "maps\\Anything%20is%20Possible\\6.png"
-            ]
-        },
-        "Archaic Terrace": {
-            "info": {
-                "date": "October 2019",
-                "difficulty": "Advanced",
-                "gamebanana": "https://gamebanana.com/mods/150362",
-                "map_name": "Archaic Terrace",
-                "mapper": "Bissy"
-            },
-            "image_paths": [
-                "maps\\Archaic%20Terrace\\1.png",
-                "maps\\Archaic%20Terrace\\2.png",
-                "maps\\Archaic%20Terrace\\3.png",
-                "maps\\Archaic%20Terrace\\4.png",
-                "maps\\Archaic%20Terrace\\5.png",
-                "maps\\Archaic%20Terrace\\6.png"
             ]
         },
         "Arphimigon's D-Sides": {
@@ -1245,23 +1080,6 @@
                 "maps\\Arphimigon%27s%20D-Sides\\6.png"
             ]
         },
-        "Asleep": {
-            "info": {
-                "date": "February 2020",
-                "difficulty": "Advanced",
-                "gamebanana": "https://gamebanana.com/mods/150624",
-                "map_name": "Asleep",
-                "mapper": "Evilleafy"
-            },
-            "image_paths": [
-                "maps\\Asleep\\1.png",
-                "maps\\Asleep\\2.png",
-                "maps\\Asleep\\3.png",
-                "maps\\Asleep\\4.png",
-                "maps\\Asleep\\5.png",
-                "maps\\Asleep\\6.png"
-            ]
-        },
         "Astraeus": {
             "info": {
                 "date": "May 2021",
@@ -1279,23 +1097,6 @@
                 "maps\\Astraeus\\6.png"
             ]
         },
-        "Astral Tower": {
-            "info": {
-                "date": "June 2020",
-                "difficulty": "Expert",
-                "gamebanana": "https://gamebanana.com/mods/150363",
-                "map_name": "Astral Tower",
-                "mapper": "splee"
-            },
-            "image_paths": [
-                "maps\\Astral%20Tower\\1.png",
-                "maps\\Astral%20Tower\\2.png",
-                "maps\\Astral%20Tower\\3.png",
-                "maps\\Astral%20Tower\\4.png",
-                "maps\\Astral%20Tower\\5.png",
-                "maps\\Astral%20Tower\\6.png"
-            ]
-        },
         "At Dawn": {
             "info": {
                 "date": "Early 2022",
@@ -1311,23 +1112,6 @@
                 "maps\\At%20Dawn\\4.png",
                 "maps\\At%20Dawn\\5.png",
                 "maps\\At%20Dawn\\6.png"
-            ]
-        },
-        "Autumnal Heights": {
-            "info": {
-                "date": "December 2021",
-                "difficulty": "Advanced",
-                "gamebanana": "https://gamebanana.com/mods/339969",
-                "map_name": "Autumnal Heights",
-                "mapper": "CoryD_"
-            },
-            "image_paths": [
-                "maps\\Autumnal%20Heights\\1.png",
-                "maps\\Autumnal%20Heights\\2.png",
-                "maps\\Autumnal%20Heights\\3.png",
-                "maps\\Autumnal%20Heights\\4.png",
-                "maps\\Autumnal%20Heights\\5.png",
-                "maps\\Autumnal%20Heights\\6.png"
             ]
         },
         "Avian Ascension": {
@@ -2144,23 +1928,6 @@
                 "maps\\DELTASCENEONE\\4.png",
                 "maps\\DELTASCENEONE\\5.png",
                 "maps\\DELTASCENEONE\\6.png"
-            ]
-        },
-        "Delusional Canopy": {
-            "info": {
-                "date": "April 2022",
-                "difficulty": "Advanced-Expert",
-                "gamebanana": "https://gamebanana.com/mods/371770",
-                "map_name": "Delusional Canopy",
-                "mapper": "ABuffZucchini"
-            },
-            "image_paths": [
-                "maps\\Delusional%20Canopy\\1.png",
-                "maps\\Delusional%20Canopy\\2.png",
-                "maps\\Delusional%20Canopy\\3.png",
-                "maps\\Delusional%20Canopy\\4.png",
-                "maps\\Delusional%20Canopy\\5.png",
-                "maps\\Delusional%20Canopy\\6.png"
             ]
         },
         "Depleted Reservoir - Abandoned Aqueduct": {
@@ -3215,23 +2982,6 @@
                 "maps\\How%20To%20Make%20A%20Map%20For%20a%20Scrapped%20Contest\\4.png",
                 "maps\\How%20To%20Make%20A%20Map%20For%20a%20Scrapped%20Contest\\5.png",
                 "maps\\How%20To%20Make%20A%20Map%20For%20a%20Scrapped%20Contest\\6.png"
-            ]
-        },
-        "iamdadbod Collab 2018": {
-            "info": {
-                "date": "June 2019",
-                "difficulty": "Beginner-Expert",
-                "gamebanana": "https://gamebanana.com/mods/150797",
-                "map_name": "iamdadbod Collab 2018",
-                "mapper": "Many people"
-            },
-            "image_paths": [
-                "maps\\iamdadbod%20Collab%202018\\1.png",
-                "maps\\iamdadbod%20Collab%202018\\2.png",
-                "maps\\iamdadbod%20Collab%202018\\3.png",
-                "maps\\iamdadbod%20Collab%202018\\4.png",
-                "maps\\iamdadbod%20Collab%202018\\5.png",
-                "maps\\iamdadbod%20Collab%202018\\6.png"
             ]
         },
         "Iamdadbod's Birthday Special - Dad's Tower": {
@@ -4696,23 +4446,6 @@
                 "maps\\Nyan%27s%20Balls%20Week%20-%20pls%20ultra\\6.png"
             ]
         },
-        "Nyan's Balls Week - POV: You Did Ultra": {
-            "info": {
-                "date": "August 2021",
-                "difficulty": "Expert",
-                "gamebanana": "https://gamebanana.com/mods/311419",
-                "map_name": "Nyan's Balls Week - POV: You Did Ultra",
-                "mapper": "PPNyan"
-            },
-            "image_paths": [
-                "maps\\Nyan%27s%20Balls%20Week%20-%20POV%20You%20Did%20Ultra\\1.png",
-                "maps\\Nyan%27s%20Balls%20Week%20-%20POV%20You%20Did%20Ultra\\2.png",
-                "maps\\Nyan%27s%20Balls%20Week%20-%20POV%20You%20Did%20Ultra\\3.png",
-                "maps\\Nyan%27s%20Balls%20Week%20-%20POV%20You%20Did%20Ultra\\4.png",
-                "maps\\Nyan%27s%20Balls%20Week%20-%20POV%20You%20Did%20Ultra\\5.png",
-                "maps\\Nyan%27s%20Balls%20Week%20-%20POV%20You%20Did%20Ultra\\6.png"
-            ]
-        },
         "Nyan's Balls Week - POV: You Didn't Ultra": {
             "info": {
                 "date": "August 2021",
@@ -5988,6 +5721,414 @@
                 "maps\\Shivering%20Hollows%20-%20Why%20do%20they%20call%20it%20oven%20when%20you%20of%20in%20the%20cold%20food%20out%20hot%20eat%20the%20food\\6.png"
             ]
         },
+        "Shrimp Contest -  Animal (Shrimp) Crackers in my Soup": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Animal (Shrimp) Crackers in my Soup",
+                "mapper": "Shirly Shrimple"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Animal%20%28Shrimp%29%20Crackers%20in%20my%20Soup\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Animal%20%28Shrimp%29%20Crackers%20in%20my%20Soup\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Animal%20%28Shrimp%29%20Crackers%20in%20my%20Soup\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Animal%20%28Shrimp%29%20Crackers%20in%20my%20Soup\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Animal%20%28Shrimp%29%20Crackers%20in%20my%20Soup\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Animal%20%28Shrimp%29%20Crackers%20in%20my%20Soup\\6.png"
+            ]
+        },
+        "Shrimp Contest -  As Shrimple (Shrimp Temple) as That": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Beginner",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  As Shrimple (Shrimp Temple) as That",
+                "mapper": "stella <3"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20As%20Shrimple%20%28Shrimp%20Temple%29%20as%20That\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20As%20Shrimple%20%28Shrimp%20Temple%29%20as%20That\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20As%20Shrimple%20%28Shrimp%20Temple%29%20as%20That\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20As%20Shrimple%20%28Shrimp%20Temple%29%20as%20That\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20As%20Shrimple%20%28Shrimp%20Temple%29%20as%20That\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20As%20Shrimple%20%28Shrimp%20Temple%29%20as%20That\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Charred Cocktail Sauce Spaceventure": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Charred Cocktail Sauce Spaceventure",
+                "mapper": "big shramp"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Charred%20Cocktail%20Sauce%20Spaceventure\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Charred%20Cocktail%20Sauce%20Spaceventure\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Charred%20Cocktail%20Sauce%20Spaceventure\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Charred%20Cocktail%20Sauce%20Spaceventure\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Charred%20Cocktail%20Sauce%20Spaceventure\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Charred%20Cocktail%20Sauce%20Spaceventure\\6.png"
+            ]
+        },
+        "Shrimp Contest -  DeepFried": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Expert",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  DeepFried",
+                "mapper": "SelfishShellfish"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20DeepFried\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20DeepFried\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20DeepFried\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20DeepFried\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20DeepFried\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20DeepFried\\6.png"
+            ]
+        },
+        "Shrimp Contest -  elderly location": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Beginner",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  elderly location",
+                "mapper": "crutch32"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20elderly%20location\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20elderly%20location\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20elderly%20location\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20elderly%20location\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20elderly%20location\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20elderly%20location\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Fishnet Dimension": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Fishnet Dimension",
+                "mapper": "3 dolar special"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Fishnet%20Dimension\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Fishnet%20Dimension\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Fishnet%20Dimension\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Fishnet%20Dimension\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Fishnet%20Dimension\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Fishnet%20Dimension\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Flower Bumper Mountain": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Flower Bumper Mountain",
+                "mapper": "jessica.geller"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Flower%20Bumper%20Mountain\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Flower%20Bumper%20Mountain\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Flower%20Bumper%20Mountain\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Flower%20Bumper%20Mountain\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Flower%20Bumper%20Mountain\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Flower%20Bumper%20Mountain\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Frosted Bonkrill's Slumber": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Frosted Bonkrill's Slumber",
+                "mapper": "prawnish_b1shop"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Frosted%20Bonkrill%27s%20Slumber\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Frosted%20Bonkrill%27s%20Slumber\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Frosted%20Bonkrill%27s%20Slumber\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Frosted%20Bonkrill%27s%20Slumber\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Frosted%20Bonkrill%27s%20Slumber\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Frosted%20Bonkrill%27s%20Slumber\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Heart of the Shrimp": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Grandmaster",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Heart of the Shrimp",
+                "mapper": "Ru"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Heart%20of%20the%20Shrimp\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Heart%20of%20the%20Shrimp\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Heart%20of%20the%20Shrimp\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Heart%20of%20the%20Shrimp\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Heart%20of%20the%20Shrimp\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Heart%20of%20the%20Shrimp\\6.png"
+            ]
+        },
+        "Shrimp Contest -  into the blue": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Expert",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  into the blue",
+                "mapper": "dogmode_activated"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20into%20the%20blue\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20into%20the%20blue\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20into%20the%20blue\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20into%20the%20blue\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20into%20the%20blue\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20into%20the%20blue\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Krill Bay": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Krill Bay",
+                "mapper": "7krill"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Krill%20Bay\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Krill%20Bay\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Krill%20Bay\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Krill%20Bay\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Krill%20Bay\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Krill%20Bay\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Krillosophical conshrimperations": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Intermediate",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Krillosophical conshrimperations",
+                "mapper": "The Philosopher"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Krillosophical%20conshrimperations\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Krillosophical%20conshrimperations\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Krillosophical%20conshrimperations\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Krillosophical%20conshrimperations\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Krillosophical%20conshrimperations\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Krillosophical%20conshrimperations\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Scallop Sanctorium": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Grandmaster",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Scallop Sanctorium",
+                "mapper": "Robust_crayfish"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Scallop%20Sanctorium\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Scallop%20Sanctorium\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Scallop%20Sanctorium\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Scallop%20Sanctorium\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Scallop%20Sanctorium\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Scallop%20Sanctorium\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Scrumptious Scampiscape": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Expert",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Scrumptious Scampiscape",
+                "mapper": "Der Shrimpkin"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Scrumptious%20Scampiscape\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Scrumptious%20Scampiscape\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Scrumptious%20Scampiscape\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Scrumptious%20Scampiscape\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Scrumptious%20Scampiscape\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Scrumptious%20Scampiscape\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Shrimp 2500 Meters": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Shrimp 2500 Meters",
+                "mapper": "ShrimpQQ"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Shrimp%202500%20Meters\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Shrimp%202500%20Meters\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Shrimp%202500%20Meters\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Shrimp%202500%20Meters\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Shrimp%202500%20Meters\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Shrimp%202500%20Meters\\6.png"
+            ]
+        },
+        "Shrimp Contest -  Shrimpsong": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  Shrimpsong",
+                "mapper": "The Wald Brothers"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20Shrimpsong\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20Shrimpsong\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20Shrimpsong\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20Shrimpsong\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20Shrimpsong\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20Shrimpsong\\6.png"
+            ]
+        },
+        "Shrimp Contest -  So, You're Telling Me a": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  So, You're Telling Me a",
+                "mapper": "Rice"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20So%2C%20You%27re%20Telling%20Me%20a\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20So%2C%20You%27re%20Telling%20Me%20a\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20So%2C%20You%27re%20Telling%20Me%20a\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20So%2C%20You%27re%20Telling%20Me%20a\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20So%2C%20You%27re%20Telling%20Me%20a\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20So%2C%20You%27re%20Telling%20Me%20a\\6.png"
+            ]
+        },
+        "Shrimp Contest -  The day Chaos took over": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  The day Chaos took over",
+                "mapper": "Aurora Aquir"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20The%20day%20Chaos%20took%20over\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20day%20Chaos%20took%20over\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20day%20Chaos%20took%20over\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20day%20Chaos%20took%20over\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20day%20Chaos%20took%20over\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20day%20Chaos%20took%20over\\6.png"
+            ]
+        },
+        "Shrimp Contest -  The Green Temple": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  The Green Temple",
+                "mapper": "lxlx"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20The%20Green%20Temple\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Green%20Temple\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Green%20Temple\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Green%20Temple\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Green%20Temple\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Green%20Temple\\6.png"
+            ]
+        },
+        "Shrimp Contest -  The Registry": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Intermediate",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  The Registry",
+                "mapper": "SSRPcharade_"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20The%20Registry\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Registry\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Registry\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Registry\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Registry\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Registry\\6.png"
+            ]
+        },
+        "Shrimp Contest -  The Shrimpside": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Grandmaster",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  The Shrimpside",
+                "mapper": "The Shrimpfest Team"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20The%20Shrimpside\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Shrimpside\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Shrimpside\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Shrimpside\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Shrimpside\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Shrimpside\\6.png"
+            ]
+        },
+        "Shrimp Contest -  The Tides from The Sea": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Advanced",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest -  The Tides from The Sea",
+                "mapper": "Bobby Fisher"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20%20The%20Tides%20from%20The%20Sea\\1.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Tides%20from%20The%20Sea\\2.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Tides%20from%20The%20Sea\\3.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Tides%20from%20The%20Sea\\4.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Tides%20from%20The%20Sea\\5.png",
+                "maps\\Shrimp%20Contest%20-%20%20The%20Tides%20from%20The%20Sea\\6.png"
+            ]
+        },
+        "Shrimp Contest - Blackgrounds": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Expert",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest - Blackgrounds",
+                "mapper": "smiLINGUAteD27"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20Blackgrounds\\1.png",
+                "maps\\Shrimp%20Contest%20-%20Blackgrounds\\2.png",
+                "maps\\Shrimp%20Contest%20-%20Blackgrounds\\3.png",
+                "maps\\Shrimp%20Contest%20-%20Blackgrounds\\4.png",
+                "maps\\Shrimp%20Contest%20-%20Blackgrounds\\5.png",
+                "maps\\Shrimp%20Contest%20-%20Blackgrounds\\6.png"
+            ]
+        },
+        "Shrimp Contest - srimp's curse": {
+            "info": {
+                "date": "April 2023",
+                "difficulty": "Intermediate",
+                "gamebanana": "https://gamebanana.com/mods/435410",
+                "map_name": "Shrimp Contest - srimp's curse",
+                "mapper": "ABuffZucchini"
+            },
+            "image_paths": [
+                "maps\\Shrimp%20Contest%20-%20srimp%27s%20curse\\1.png",
+                "maps\\Shrimp%20Contest%20-%20srimp%27s%20curse\\2.png",
+                "maps\\Shrimp%20Contest%20-%20srimp%27s%20curse\\3.png",
+                "maps\\Shrimp%20Contest%20-%20srimp%27s%20curse\\4.png",
+                "maps\\Shrimp%20Contest%20-%20srimp%27s%20curse\\5.png",
+                "maps\\Shrimp%20Contest%20-%20srimp%27s%20curse\\6.png"
+            ]
+        },
         "Shrouded Thoughts": {
             "info": {
                 "date": "November 2019",
@@ -6923,23 +7064,6 @@
                 "maps\\Sunset%20Skyway\\6.png"
             ]
         },
-        "Switch Mountain": {
-            "info": {
-                "date": "November 2021",
-                "difficulty": "Beginner",
-                "gamebanana": "https://gamebanana.com/mods/334641",
-                "map_name": "Switch Mountain",
-                "mapper": "4mmm"
-            },
-            "image_paths": [
-                "maps\\Switch%20Mountain\\1.png",
-                "maps\\Switch%20Mountain\\2.png",
-                "maps\\Switch%20Mountain\\3.png",
-                "maps\\Switch%20Mountain\\4.png",
-                "maps\\Switch%20Mountain\\5.png",
-                "maps\\Switch%20Mountain\\6.png"
-            ]
-        },
         "Switchland": {
             "info": {
                 "date": "May 2021",
@@ -7040,23 +7164,6 @@
                 "maps\\Sylvan%20Grove%20-%20Ethereal%20Hollows\\4.png",
                 "maps\\Sylvan%20Grove%20-%20Ethereal%20Hollows\\5.png",
                 "maps\\Sylvan%20Grove%20-%20Ethereal%20Hollows\\6.png"
-            ]
-        },
-        "Sylvan Grove - Ineluctable Modality of the Sump": {
-            "info": {
-                "date": "September 2022",
-                "difficulty": "Intermediate",
-                "gamebanana": "https://gamebanana.com/mods/401838",
-                "map_name": "Sylvan Grove - Ineluctable Modality of the Sump",
-                "mapper": "Gamation"
-            },
-            "image_paths": [
-                "maps\\Sylvan%20Grove%20-%20Ineluctable%20Modality%20of%20the%20Sump\\1.png",
-                "maps\\Sylvan%20Grove%20-%20Ineluctable%20Modality%20of%20the%20Sump\\2.png",
-                "maps\\Sylvan%20Grove%20-%20Ineluctable%20Modality%20of%20the%20Sump\\3.png",
-                "maps\\Sylvan%20Grove%20-%20Ineluctable%20Modality%20of%20the%20Sump\\4.png",
-                "maps\\Sylvan%20Grove%20-%20Ineluctable%20Modality%20of%20the%20Sump\\5.png",
-                "maps\\Sylvan%20Grove%20-%20Ineluctable%20Modality%20of%20the%20Sump\\6.png"
             ]
         },
         "Sylvan Grove - Levels": {
@@ -8519,23 +8626,6 @@
                 "maps\\Water%20Space\\4.png",
                 "maps\\Water%20Space\\5.png",
                 "maps\\Water%20Space\\6.png"
-            ]
-        },
-        "Waterbear Mountain": {
-            "info": {
-                "date": "January 2022",
-                "difficulty": "Grandmaster",
-                "gamebanana": "https://gamebanana.com/mods/351275",
-                "map_name": "Waterbear Mountain",
-                "mapper": "FrenchTardigrade"
-            },
-            "image_paths": [
-                "maps\\Waterbear%20Mountain\\1.png",
-                "maps\\Waterbear%20Mountain\\2.png",
-                "maps\\Waterbear%20Mountain\\3.png",
-                "maps\\Waterbear%20Mountain\\4.png",
-                "maps\\Waterbear%20Mountain\\5.png",
-                "maps\\Waterbear%20Mountain\\6.png"
             ]
         },
         "Winged Station": {
